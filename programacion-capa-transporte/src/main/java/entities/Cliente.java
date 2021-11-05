@@ -20,6 +20,10 @@ public class Cliente {
     public void socket(int nroPuerto){
 
         this.socketAsociado = new Socket(2, nroPuerto, true, false);
+        System.out.println();
+        System.out.println("Primitiva SOCKET (Cliente): se creó un nuevo punto terminal de comunicación en el cliente");
+        System.out.println("   - ID Socket: " + socketAsociado.getIdSocket());
+        System.out.println("   - Número de Puerto: " + socketAsociado.getNroPuerto());
 
     }
 

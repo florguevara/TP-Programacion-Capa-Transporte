@@ -25,7 +25,7 @@ public class Servidor {
 
         this.socketAsociado = new Socket(1, nroPuerto, false, true);
         System.out.println();
-        System.out.println("Primitiva SOCKET: se creó un nuevo punto terminal de comunicación");
+        System.out.println("Primitiva SOCKET (Servidor): se creó un nuevo punto terminal de comunicación en el servidor");
         System.out.println("   - ID Socket: " + socketAsociado.getIdSocket());
         System.out.println("   - Número de Puerto: " + socketAsociado.getNroPuerto());
         cliente.socket(nroPuerto);
@@ -99,7 +99,7 @@ public class Servidor {
 
         }else {
 
-            System.out.println("Aun no se liberó la conexión - El cliente y/o servidor aun están recibiendo datos");
+            System.out.println("Aun no se liberó la conexión - El cliente y/o servidor aún están recibiendo datos");
 
         }
 
